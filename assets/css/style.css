@@ -1,5 +1,7 @@
 /* Font Family */
-@import url("https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Sora:wght@100..800&display=swap");
+
+/* font-family: "Inter", sans-serif; */
 
 :root {
   /* ------ Colors ----- */
@@ -66,6 +68,8 @@ h6 {
   margin: 0;
   padding: 0;
   color: inherit;
+  font-weight: normal;
+  font-style: normal;
 }
 
 h1 {
@@ -140,21 +144,19 @@ section {
   align-items: center;
   justify-content: center;
   color: var(--white);
-  background: #1F107E; /* fallback for old browsers */
-  background: -webkit-linear-gradient(
-    to right,
-    #1F107E,
-    #C467EC
-  ); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(
-    to right,
-    #1F107E,
-    #C467EC
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #1f107e;
+  background: -webkit-linear-gradient(to right, #1f107e, #c467ec);
+  background: linear-gradient(to right, #1f107e, #c467ec);
 }
 
-.top_nav i{
-   font-size: 14px;
+.top_nav i {
+  font-size: 14px;
+}
+
+.top_nav h6 {
+  font-size: var(--fs-6);
+  font-family: "Inter", sans-serif;
+  font-weight: normal;
 }
 
 .top_nav_right {
@@ -167,7 +169,165 @@ section {
   border-left: 1px solid #d9d9d9;
   padding-left: 1rem;
 }
+
 /* ------------------- Main Navbar --------------------  */
+
+.header .btn {
+  display: none;
+}
+
+.header {
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 20px 10px;
+  z-index: 999;
+}
+
+.header .home__navabr {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  background-color: var(--black);
+  color: var(--white);
+  display: flex;
+  align-items: center;
+  width: 80%;
+  height: 100%;
+  padding: 20px;
+  z-index: 9999;
+  transform: translateX(100%);
+  visibility: hidden;
+  transition: 0.25s var(--cubic-in);
+}
+
+.navbar.active {
+  transform: translateX(0);
+  visibility: visible;
+  transition: 0.5s var(--cubic-out);
+}
+
+.navbar .wrapper .nav__logo {
+  position: absolute;
+  top: 2rem;
+}
+
+.navbar .navbar-list {
+  position: absolute;
+  left: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 14px;
+  padding-inline: 3px;
+}
+
+.navbar .navbar-list .navbar-link {
+  display: block;
+  font-size: var(--h3);
+}
+
+.nav-close-btn {
+  transition: var(--transition-1);
+  position: absolute;
+  top: 2rem;
+  right: 1rem;
+}
+
+.nav-close-btn i {
+  font-size: 30px;
+  color: var(--black);
+}
+
+.navbar-link {
+  color: var(--white);
+  font-size: 20pt;
+  transition: var(--transition-1);
+  padding-left: -4rem;
+}
+
+header .btn {
+  padding: 12px 23px;
+  color: var(--primary-color);
+  font-weight: 600;
+  font-size: var(--fs-4);
+  border: 2px solid var(--primary-color);
+  border-radius: 50px;
+  transition: var(--transition-1);
+  outline: none;
+}
+
+header .btn:hover {
+  border: 2px solid var(--primary-color);
+  color: var(--white);
+  background: #1f107e;
+  background: -webkit-linear-gradient(to right, #1f107e, #c467ec);
+  background: linear-gradient(to right, #1f107e, #c467ec);
+}
+
+.nav-open-btn i {
+  font-size: 22px;
+  color: var(--primary-color);
+}
+
+.overlay {
+  position: fixed;
+  inset: 0;
+  background-color: var(--white);
+  transition: var(--transition-2);
+  opacity: 0;
+  pointer-events: none;
+}
+
+.overlay.active {
+  opacity: 1;
+  pointer-events: all;
+}
+
+@media (min-width: 992px) {
+  .nav-open-btn,
+  .overlay,
+  .navbar .wrapper {
+    display: none;
+  }
+
+  .navbar,
+  .navbar.active {
+    all: unset;
+  }
+
+  .navbar{
+    margin-top: 18px;
+  }
+
+  .navbar .navbar-list {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    gap: 35px;
+  }
+
+  .navbar .navbar-list .navbar-link {
+    font-size: var(--fs-4);
+    color: var(--black);
+    font-family: "Inter", sans-serif;
+  }
+
+  .contact-link {
+    display: none;
+  }
+
+  .header .btn {
+    display: inline-flex;
+  }
+}
 
 /* ------------------- Hero Section -------------------- */
 /* ------------------- Date Section -------------------- */
