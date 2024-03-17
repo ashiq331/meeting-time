@@ -9,6 +9,8 @@
   --primary-color: #7041be;
   --white: #ffffff;
   --black: #000000;
+  --black-500: #1d1f2c;
+  --black-400: #4a4c56;
 
   --gardients: linear-gradient(#c467ec, #2e1888);
 
@@ -20,6 +22,9 @@
   --fs-5: 16px;
   --fs-6: 14px;
   --fs-7: 12px;
+
+  /* Font Family */
+  --font-inter: "Inter", sans-serif;
 
   --transition-1: 0.3s ease;
   --transition-2: 0.5s ease;
@@ -135,6 +140,14 @@ section {
   align-items: center;
   justify-content: center;
   gap: 12px;
+}
+
+.text-gardinets {
+  background: #1f107e;
+  background: -webkit-linear-gradient(to right, #1f107e, #c467ec);
+  background: linear-gradient(to right, #1f107e, #c467ec);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 /* ------------------- Top Navbar -------------------- */
@@ -253,7 +266,7 @@ section {
   padding-left: -4rem;
 }
 
-header .btn {
+header .start-btn {
   padding: 12px 23px;
   color: var(--primary-color);
   font-weight: 600;
@@ -264,7 +277,7 @@ header .btn {
   outline: none;
 }
 
-header .btn:hover {
+header .start-btn:hover {
   border: 2px solid var(--white);
   color: var(--white);
   background: #1f107e;
@@ -320,7 +333,7 @@ header .btn:hover {
     font-family: "Inter", sans-serif;
   }
 
-  .navbar .navbar-list .navbar-item .active{
+  .navbar .navbar-list .navbar-item .active {
     background: #1f107e;
     background: -webkit-linear-gradient(to right, #1f107e, #c467ec);
     background: linear-gradient(to right, #1f107e, #c467ec);
@@ -337,7 +350,69 @@ header .btn:hover {
   }
 }
 
+.btn {
+  margin: 0 auto;
+  background: #1f107e;
+  background: -webkit-linear-gradient(to right, #1f107e, #c467ec);
+  background: linear-gradient(to right, #1f107e, #c467ec);
+  color: var(--white);
+  border: none;
+  outline: none;
+  padding: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  width: 250px;
+  border-radius: 50px;
+}
+
+.btn:hover{
+  color: var(--white);
+  opacity: 0.9;
+}
+
+
 /* ------------------- Hero Section -------------------- */
+.home_content {
+  height: 700px;
+  padding-top: 11rem;
+  background: url("/assets/images/home-bg.png");
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+  text-align: center;
+}
+
+.home_content .home_title h1 {
+  font-size: var(--fs-1);
+  font-weight: bold;
+  line-height: 110%;
+  color: var(--black-500);
+}
+
+.home_content .home_article p {
+  padding-top: 1.5rem;
+  padding-bottom: 2rem;
+  color: var(--black-400);
+  font-size: var(--fs-4);
+  width: 60%;
+  margin: 0 auto;
+}
+
+.home_content .home_btn a{
+  margin-bottom: 1.3rem;
+  font-weight: 500;
+  font-size: var(--fs-4);
+}
+
+.home_content .home_update_note p{
+font-size: var(--fs-7);
+font-family: var(--font-inter);
+color: var(--black-400);
+}
+
+
 /* ------------------- Date Section -------------------- */
 /* ------------------- About Us Section -------------------- */
 /* ------------------- Blog Section -------------------- */
