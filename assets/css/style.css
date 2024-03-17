@@ -260,12 +260,12 @@ header .btn {
   font-size: var(--fs-4);
   border: 2px solid var(--primary-color);
   border-radius: 50px;
-  transition: var(--transition-1);
+  transition: var(--transition-2);
   outline: none;
 }
 
 header .btn:hover {
-  border: 2px solid var(--primary-color);
+  border: 2px solid var(--white);
   color: var(--white);
   background: #1f107e;
   background: -webkit-linear-gradient(to right, #1f107e, #c467ec);
@@ -303,7 +303,7 @@ header .btn:hover {
     all: unset;
   }
 
-  .navbar{
+  .navbar {
     margin-top: 18px;
   }
 
@@ -318,6 +318,14 @@ header .btn:hover {
     font-size: var(--fs-4);
     color: var(--black);
     font-family: "Inter", sans-serif;
+  }
+
+  .navbar .navbar-list .navbar-item .active{
+    background: #1f107e;
+    background: -webkit-linear-gradient(to right, #1f107e, #c467ec);
+    background: linear-gradient(to right, #1f107e, #c467ec);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
 
   .contact-link {
