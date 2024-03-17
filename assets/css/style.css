@@ -125,7 +125,6 @@ button {
 
 section {
   width: 100%;
-  overflow: hidden !important;
 }
 
 .flex-between {
@@ -305,6 +304,10 @@ header .start-btn:hover {
 }
 
 @media (min-width: 992px) {
+  .header{
+    background-color: var(--white);
+  }
+  
   .nav-open-btn,
   .overlay,
   .navbar .wrapper {
@@ -367,15 +370,14 @@ header .start-btn:hover {
   border-radius: 50px;
 }
 
-.btn:hover{
+.btn:hover {
   color: var(--white);
   opacity: 0.9;
 }
 
-
 /* ------------------- Hero Section -------------------- */
 .home_content {
-  height: 700px;
+  height: 650px;
   padding-top: 11rem;
   background: url("/assets/images/home-bg.png");
   background-repeat: no-repeat;
@@ -400,21 +402,81 @@ header .start-btn:hover {
   margin: 0 auto;
 }
 
-.home_content .home_btn a{
+.home_content .home_btn a {
   margin-bottom: 1.3rem;
   font-weight: 500;
   font-size: var(--fs-4);
 }
 
-.home_content .home_update_note p{
-font-size: var(--fs-7);
-font-family: var(--font-inter);
-color: var(--black-400);
+.home_content .home_update_note p {
+  font-size: var(--fs-7);
+  font-family: var(--font-inter);
+  color: var(--black-400);
+}
+
+/* ------------------- Date Section -------------------- */
+
+.date {
+  background: url("/assets/images/home-bg-2.png");
+  background-size: cover;
+  background-position-y: 80%;
+}
+
+.date_content{
+  position: relative;
+  height: 400px;
+}
+
+.date_top{
+  margin: 0 auto;
+  width: max-content;
+  background: #d77dfe2a;
+  padding: 12px 18px;
+  border-radius: 8px;
+
+}
+
+.date_top .date_top-content:nth-child(2),
+.date_top .date_top-content:nth-child(3)
+{
+  border-left: 1px solid #5D3ED7;
+margin-left: 2rem;
+padding-left: 2rem;
 }
 
 
-/* ------------------- Date Section -------------------- */
+.date_top .date_top-content img{
+  width: 20px;
+  height: 20px;
+}
+
+.date_top .date_top-content h4{
+  color: var(--black-500);
+  font-size: var(--fs-4);
+  font-family: var(--font-inter);
+}
+
+.date_bottom {
+  position: absolute;
+  bottom: -20rem;
+  z-index: 99 !important;
+}
+
+.date_bottom img {
+  margin: 0 auto;
+  width: 80%;
+}
+
 /* ------------------- About Us Section -------------------- */
+
+.about {
+  color: var(--white);
+  background: #1f107e;
+  background: -webkit-linear-gradient(to right, #1f107e, #c467ec);
+  background: linear-gradient(to right, #1f107e, #c467ec);
+  height: 200vh;
+  position: relative;
+}
 /* ------------------- Blog Section -------------------- */
 /* ------------------- Wishlist Section -------------------- */
 /* ------------------- client cycle Section -------------------- */
