@@ -1,0 +1,104 @@
+/* Font Family */
+@import url("https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap");
+
+:root {
+  /* ------ Colors ----- */
+
+  --primary-color: #7041BE;
+  --white: #FFFFFF;
+  --black: #000000;
+
+  --gardients: linear-gradient(to right, #C467EC, #2E1888);
+
+  /* Font Size */
+  --fs-1: 64px;
+  --fs-2: 48px;
+  --fs-3: 24px;
+  --fs-4: 18px;
+  --fs-5: 16px;
+  --fs-6: 14px;
+  --fs-7: 12px;
+
+  --transition-1: 0.3s ease;
+  --transition-2: 0.5s ease;
+  --cubic-in: cubic-bezier(0.51, 0.03, 0.64, 0.28);
+  --cubic-out: cubic-bezier(0.33, 0.85, 0.4, 0.96);
+}
+
+/* ----------------- Custom Css ------------------ */
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Sora", sans-serif;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--white);
+  color: var(--black);
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+input,
+button {
+  background: none;
+  border: none;
+  font: inherit;
+  color: inherit;
+}
+
+input {
+  width: 100%;
+}
+
+button {
+  cursor: pointer;
+}
+
+section {
+  width: 100%;
+  overflow: hidden !important;
+}
+
+
+
+/* ------------------- Top Navbar -------------------- */
+/* ------------------- Main Navbar --------------------  */
+
+
+/* ------------------- Hero Section -------------------- */
+/* ------------------- Date Section -------------------- */
+/* ------------------- About Us Section -------------------- */
+/* ------------------- Blog Section -------------------- */
+/* ------------------- Wishlist Section -------------------- */
+/* ------------------- client cycle Section -------------------- */
+/* ------------------- Review Section -------------------- */
+/* ------------------- Benefits Section -------------------- */
+/* ------------------- Wishlist Section -------------------- */
+/* ------------------- Problem & Solution Section --------------------  */
+/* ------------------- Question Section -------------------- */
+/* ------------------- Wishlist Section -------------------- */
+/* ------------------- Footer -------------------- */
+/* ------------------- Copyright -------------------- */
