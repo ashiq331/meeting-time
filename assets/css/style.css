@@ -4,11 +4,11 @@
 :root {
   /* ------ Colors ----- */
 
-  --primary-color: #7041BE;
-  --white: #FFFFFF;
+  --primary-color: #7041be;
+  --white: #ffffff;
   --black: #000000;
 
-  --gardients: linear-gradient(to right, #C467EC, #2E1888);
+  --gardients: linear-gradient(#c467ec, #2e1888);
 
   /* Font Size */
   --fs-1: 64px;
@@ -38,6 +38,8 @@
 
 html {
   font-family: "Sora", sans-serif;
+  font-weight: normal;
+  font-weight: normal;
   scroll-behavior: smooth;
 }
 
@@ -53,6 +55,41 @@ li {
 a {
   color: inherit;
   text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+  color: inherit;
+}
+
+h1 {
+  font-size: var(--fs-1);
+}
+
+h2 {
+  font-size: var(--fs-2);
+}
+
+h3 {
+  font-size: var(--fs-3);
+}
+
+h4 {
+  font-size: var(--fs-4);
+}
+
+h5 {
+  font-size: var(--fs-5);
+}
+
+h6 {
+  font-size: var(--fs-6);
 }
 
 img {
@@ -82,11 +119,55 @@ section {
   overflow: hidden !important;
 }
 
+.flex-between {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
 
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+}
 
 /* ------------------- Top Navbar -------------------- */
-/* ------------------- Main Navbar --------------------  */
+.top_nav {
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--white);
+  background: #1F107E; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #1F107E,
+    #C467EC
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #1F107E,
+    #C467EC
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
 
+.top_nav i{
+   font-size: 14px;
+}
+
+.top_nav_right {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.email {
+  border-left: 1px solid #d9d9d9;
+  padding-left: 1rem;
+}
+/* ------------------- Main Navbar --------------------  */
 
 /* ------------------- Hero Section -------------------- */
 /* ------------------- Date Section -------------------- */
