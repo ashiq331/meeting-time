@@ -1,8 +1,9 @@
 /* Font Family */
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Sora:wght@100..800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Sora:wght@100..800&display=swap");
 
 /* font-family: "Inter", sans-serif; 
-font-family: "Mulish", sans-serif;
+  font-family: "Mulish", sans-serif;
+  font-family: "Sora", sans-serif;
 */
 
 :root {
@@ -409,6 +410,7 @@ header .start-btn:hover {
   margin-bottom: 1.3rem;
   font-weight: 500;
   font-size: var(--fs-4);
+  font-weight: 600;
 }
 
 .home_content .home_update_note p {
@@ -570,7 +572,6 @@ header .start-btn:hover {
   background-position: center;
 }
 
-
 .blog_headings .blog_title {
   font-size: var(--fs-7);
   font-family: var(--font-inter);
@@ -607,8 +608,7 @@ header .start-btn:hover {
   color: var(--black-500);
 }
 
-
-.blog_container{
+.blog_container {
   padding-top: 3.75rem;
   display: flex;
   align-items: center;
@@ -617,11 +617,11 @@ header .start-btn:hover {
   gap: 1.6rem;
 }
 
-.blog_container .blog_box{
+.blog_container .blog_box {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  width: 31.50%;
+  width: 31.5%;
   height: 489px;
   gap: 32px;
   padding: 32px;
@@ -630,26 +630,25 @@ header .start-btn:hover {
   box-shadow: 1px 2px 2px #a5a5ab3b;
 }
 
-.blog_container .blog_box img{
+.blog_container .blog_box img {
   object-fit: cover;
 }
 
-.blog_container .blog_box h3{
+.blog_container .blog_box h3 {
   font-size: var(--fs-3);
   font-weight: bold;
   color: var(--black-500);
   line-height: 120%;
 }
 
-.blog_container .blog_box p{
+.blog_container .blog_box p {
   color: var(--black-400);
   font-family: var(--font-mulish);
   font-size: var(--fs-4);
-
 }
 /* ------------------- Wishlist Section -------------------- */
 
-.wishlist_container{
+.wishlist_container {
   background: url("/assets/images/wishlist-bg.png");
   background-repeat: no-repeat;
   background-size: cover;
@@ -663,7 +662,17 @@ header .start-btn:hover {
   color: var(--white);
 }
 
-.wishlist_container .wishlist_title h3{
+.wishlist_content {
+  height: 302px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+}
+
+.wishlist_container .wishlist_title h3
+{
   font-size: var(--fs-3);
   font-weight: 600;
   width: 65%;
@@ -673,8 +682,25 @@ header .start-btn:hover {
   line-height: 140%;
 }
 
-.wishlist_container .wishlist_btn .btn{
+.wishlist_content .wishlist_title h3{
+  font-size: 40px;
+  font-weight: 600;
+  width: 90%;
+  text-align: center;
+  margin: 0 auto;
+  line-height: 130%;
+}
+
+.wishlist_container .wishlist_btn .btn {
   background: transparent;
+  padding: 18px 30px;
+  width: 300px;
+  border: 2px solid var(--white);
+  font-size: var(--fs-4);
+  font-weight: 600;
+}
+
+.wishlist_content .btn{
   padding: 18px 30px;
   width: 300px;
   border: 2px solid var(--white);
@@ -684,7 +710,7 @@ header .start-btn:hover {
 
 /* ------------------- client cycle Section -------------------- */
 
-.client_cycle{
+.client_cycle {
   padding: 8.75rem 0;
 }
 /* ------------------- Review Section -------------------- */
