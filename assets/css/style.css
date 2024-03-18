@@ -1,7 +1,9 @@
 /* Font Family */
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Sora:wght@100..800&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Sora:wght@100..800&display=swap');
 
-/* font-family: "Inter", sans-serif; */
+/* font-family: "Inter", sans-serif; 
+font-family: "Mulish", sans-serif;
+*/
 
 :root {
   /* ------ Colors ----- */
@@ -25,6 +27,7 @@
 
   /* Font Family */
   --font-inter: "Inter", sans-serif;
+  --font-mulish: "Mulish", sans-serif;
 
   --transition-1: 0.3s ease;
   --transition-2: 0.5s ease;
@@ -304,10 +307,10 @@ header .start-btn:hover {
 }
 
 @media (min-width: 992px) {
-  .header{
+  .header {
     background-color: var(--white);
   }
-  
+
   .nav-open-btn,
   .overlay,
   .navbar .wrapper {
@@ -422,35 +425,32 @@ header .start-btn:hover {
   background-position-y: 80%;
 }
 
-.date_content{
+.date_content {
   position: relative;
   height: 400px;
 }
 
-.date_top{
+.date_top {
   margin: 0 auto;
   width: max-content;
   background: #d77dfe2a;
   padding: 12px 18px;
   border-radius: 8px;
-
 }
 
 .date_top .date_top-content:nth-child(2),
-.date_top .date_top-content:nth-child(3)
-{
-  border-left: 1px solid #5D3ED7;
-margin-left: 2rem;
-padding-left: 2rem;
+.date_top .date_top-content:nth-child(3) {
+  border-left: 1px solid #5d3ed7;
+  margin-left: 2rem;
+  padding-left: 2rem;
 }
 
-
-.date_top .date_top-content img{
+.date_top .date_top-content img {
   width: 20px;
   height: 20px;
 }
 
-.date_top .date_top-content h4{
+.date_top .date_top-content h4 {
   color: var(--black-500);
   font-size: var(--fs-4);
   font-family: var(--font-inter);
@@ -476,31 +476,31 @@ padding-left: 2rem;
   background: linear-gradient(to right, #1f107e, #c467ec);
   position: relative;
   padding-top: 30rem;
-  padding-bottom: 7rem;
+  padding-bottom: 8.75rem;
   overflow: hidden;
 }
 
-.about .shape .shape_one{
+.about .shape .shape_one {
   position: absolute;
   top: -15rem;
   right: 0;
 }
 
-.about .shape .shape_two{
+.about .shape .shape_two {
   position: absolute;
   bottom: -22rem;
   left: 0;
 }
 
-.about .shape img{
+.about .shape img {
   width: 310px;
 }
 
-.about_content .about_headings{
+.about_content .about_headings {
   text-align: center;
 }
 
-.about_content .about_headings .about_title{
+.about_content .about_headings .about_title {
   font-size: var(--fs-7);
   font-family: var(--font-inter);
   color: var(--primary-color);
@@ -512,7 +512,7 @@ padding-left: 2rem;
   cursor: default;
 }
 
-.about_content .about_headings .about_subtitle{
+.about_content .about_headings .about_subtitle {
   padding-top: 1rem;
   padding-bottom: 1rem;
   width: 60%;
@@ -521,7 +521,7 @@ padding-left: 2rem;
   font-weight: 500;
 }
 
-.about_content .about_headings .about_article{
+.about_content .about_headings .about_article {
   width: 40%;
   margin: 0 auto;
   font-family: var(--font-inter);
@@ -530,8 +530,7 @@ padding-left: 2rem;
   line-height: 26px;
 }
 
-
-.about_content .about_details{
+.about_content .about_details {
   margin-top: 5rem;
   display: flex;
   align-self: center;
@@ -540,7 +539,7 @@ padding-left: 2rem;
   gap: 1.3rem;
 }
 
-.about_content .about_details .about_details-box{
+.about_content .about_details .about_details-box {
   width: 45%;
   background: #57545437;
   border: 1px solid #a5a5ab51;
@@ -550,9 +549,9 @@ padding-left: 2rem;
   padding-left: 24px;
 }
 
-.about_content .about_details .about_details-box p{
+.about_content .about_details .about_details-box p {
   line-height: normal;
-  border-left: 1px solid #A5A5AB;
+  border-left: 1px solid #a5a5ab;
   padding-left: 18px;
   font-size: var(--fs-4);
   font-family: var(--font-inter);
@@ -560,10 +559,134 @@ padding-left: 2rem;
   font-weight: 300;
 }
 
-
 /* ------------------- Blog Section -------------------- */
+
+.blog {
+  padding-top: 8.75rem;
+  padding-bottom: 3.5rem;
+  background: url("/assets/images/blog-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+
+.blog_headings .blog_title {
+  font-size: var(--fs-7);
+  font-family: var(--font-inter);
+  color: var(--white);
+  background: #1f107e;
+  background: -webkit-linear-gradient(to right, #1f107e, #c467ec);
+  background: linear-gradient(to right, #1f107e, #c467ec);
+  padding: 12px 24px;
+  width: 140px;
+  margin: 0 auto;
+  border-radius: 50px;
+  cursor: default;
+}
+
+.blog_headings .blog_subtitle {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  width: 65%;
+  text-align: center;
+  margin: 0 auto;
+  font-size: var(--fs-2);
+  font-weight: 500;
+  color: var(--black-500);
+}
+
+.blog_headings .blog_article {
+  width: 60%;
+  text-align: center;
+  margin: 0 auto;
+  font-family: var(--font-inter);
+  font-size: var(--fs-4);
+  font-weight: 200;
+  line-height: 26px;
+  color: var(--black-500);
+}
+
+
+.blog_container{
+  padding-top: 3.75rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1.6rem;
+}
+
+.blog_container .blog_box{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 31.50%;
+  height: 489px;
+  gap: 32px;
+  padding: 32px;
+  background-color: var(--white);
+  border-radius: 16px;
+  box-shadow: 1px 2px 2px #a5a5ab3b;
+}
+
+.blog_container .blog_box img{
+  object-fit: cover;
+}
+
+.blog_container .blog_box h3{
+  font-size: var(--fs-3);
+  font-weight: bold;
+  color: var(--black-500);
+  line-height: 120%;
+}
+
+.blog_container .blog_box p{
+  color: var(--black-400);
+  font-family: var(--font-mulish);
+  font-size: var(--fs-4);
+
+}
 /* ------------------- Wishlist Section -------------------- */
+
+.wishlist_container{
+  background: url("/assets/images/wishlist-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 302px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+  color: var(--white);
+}
+
+.wishlist_container .wishlist_title h3{
+  font-size: var(--fs-3);
+  font-weight: 600;
+  width: 65%;
+  text-align: center;
+  margin: 0 auto;
+  letter-spacing: 0.5%;
+  line-height: 140%;
+}
+
+.wishlist_container .wishlist_btn .btn{
+  background: transparent;
+  padding: 18px 30px;
+  width: 300px;
+  border: 2px solid var(--white);
+  font-size: var(--fs-4);
+  font-weight: 600;
+}
+
 /* ------------------- client cycle Section -------------------- */
+
+.client_cycle{
+  padding: 8.75rem 0;
+}
 /* ------------------- Review Section -------------------- */
 /* ------------------- Benefits Section -------------------- */
 /* ------------------- Wishlist Section -------------------- */
