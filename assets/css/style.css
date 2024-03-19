@@ -498,11 +498,13 @@ header .start-btn:hover {
   width: 310px;
 }
 
-.about_content .about_headings {
+.about_content .about_headings,
+.review_content .review_headings {
   text-align: center;
 }
 
-.about_content .about_headings .about_title {
+.about_content .about_headings .about_title,
+.review_content .review_headings .review_title {
   font-size: var(--fs-7);
   font-family: var(--font-inter);
   color: var(--primary-color);
@@ -514,13 +516,15 @@ header .start-btn:hover {
   cursor: default;
 }
 
-.about_content .about_headings .about_subtitle {
+.about_content .about_headings .about_subtitle,
+.review_content .review_headings .review_subtitle {
   padding-top: 1rem;
   padding-bottom: 1rem;
   width: 60%;
   margin: 0 auto;
   font-size: var(--fs-2);
   font-weight: 500;
+  color: var(--white);
 }
 
 .about_content .about_headings .about_article {
@@ -593,7 +597,7 @@ header .start-btn:hover {
   text-align: center;
   margin: 0 auto;
   font-size: var(--fs-2);
-  font-weight: 500;
+  font-weight: 600;
   color: var(--black-500);
 }
 
@@ -671,8 +675,7 @@ header .start-btn:hover {
   gap: 3rem;
 }
 
-.wishlist_container .wishlist_title h3
-{
+.wishlist_container .wishlist_title h3 {
   font-size: var(--fs-3);
   font-weight: 600;
   width: 65%;
@@ -682,7 +685,7 @@ header .start-btn:hover {
   line-height: 140%;
 }
 
-.wishlist_content .wishlist_title h3{
+.wishlist_content .wishlist_title h3 {
   font-size: 40px;
   font-weight: 600;
   width: 90%;
@@ -700,7 +703,7 @@ header .start-btn:hover {
   font-weight: 600;
 }
 
-.wishlist_content .btn{
+.wishlist_content .btn {
   padding: 18px 30px;
   width: 300px;
   border: 2px solid var(--white);
@@ -712,8 +715,93 @@ header .start-btn:hover {
 
 .client_cycle {
   padding: 8.75rem 0;
+  height: 80vh;
 }
 /* ------------------- Review Section -------------------- */
+.review {
+  padding: 8.75rem 0;
+  background: #1f107e;
+  background: -webkit-linear-gradient(to right, #1f107e, #c467ec);
+  background: linear-gradient(to right, #1f107e, #c467ec);
+}
+
+.review_headings {
+  padding-bottom: 80px;
+}
+
+.client_feedback {
+  display: flex;
+  align-items: center;
+  justify-content:center;
+  flex-wrap: wrap;
+  gap: 1.2rem;
+}
+
+.client_feedback .feedback_container {
+  background: #57545447;
+  border: 1px solid #e9e9ea3c;
+  width: 23.5%;
+  color: var(--white);
+  border-radius: 16px;
+  padding: 24px;
+  height: 242px;
+}
+
+.client_feedback .feedback_container .quotes img {
+  width: 24px;
+  padding-bottom: 5px;
+}
+
+.client_feedback .feedback_container .feedback p {
+  font-family: var(--font-inter);
+  font-size: var(--fs-5);
+  font-weight: 400;
+  line-height: 140%;
+  letter-spacing: 0.5%;
+}
+
+.client_feedback .feedback_container .client_details {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  margin-top: 24px;
+}
+
+.client_feedback .feedback_container .client_details .client_img {
+  width: 42px;
+  height: 42px;
+}
+
+.client_feedback .feedback_container .client_details .client_img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.client_feedback
+  .feedback_container
+  .client_details
+  .client_name_position
+  .name {
+  font-family: var(--font-inter);
+  font-size: var(--fs-5);
+  font-weight: 600;
+  line-height: 140%;
+  letter-spacing: 0.5%;
+}
+
+.client_feedback
+  .feedback_container
+  .client_details
+  .client_name_position
+  .position {
+  font-family: var(--font-inter);
+  font-size: var(--fs-7);
+  font-weight: 400;
+  line-height: 132%;
+  letter-spacing: 0.5%;
+}
+
 /* ------------------- Benefits Section -------------------- */
 /* ------------------- Wishlist Section -------------------- */
 /* ------------------- Problem & Solution Section --------------------  */
