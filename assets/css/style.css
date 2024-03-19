@@ -565,6 +565,7 @@ header .start-btn:hover {
   line-height: normal;
   border-left: 1px solid #a5a5ab;
   padding-left: 18px;
+  padding-right: 1rem;
   font-size: var(--fs-4);
   font-family: var(--font-inter);
   line-height: 26px;
@@ -664,6 +665,7 @@ header .start-btn:hover {
   background-size: cover;
   background-position: center;
   height: 302px;
+  border-radius: 16px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -735,30 +737,70 @@ header .start-btn:hover {
   padding-bottom: 80px;
 }
 
-.client_feedback {
+.services {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
-  flex-wrap: wrap;
-  gap: 1.2rem;
+  margin-top: 5rem;
 }
 
-.client_feedback .feedback_container {
+.review__list {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.review__list-up,
+.review__list-down {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: self-start;
+  -ms-flex-align: self-start;
+  align-items: self-start;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  gap: 15px;
+  padding: 1rem 0;
+}
+
+.review__list-up .review__list-box,
+.review__list-down .review__list-box {
   background: #57545447;
   border: 1px solid #e9e9ea3c;
-  width: 23.5%;
+  width: 300px;
   color: var(--white);
   border-radius: 16px;
   padding: 24px;
   height: 242px;
 }
 
-.client_feedback .feedback_container .quotes img {
+.review__list-up .review__list-box .quotes img,
+.review__list-down .review__list-box .quotes img {
   width: 24px;
   padding-bottom: 5px;
 }
 
-.client_feedback .feedback_container .feedback p {
+.review__list-up .review__list-box .feedback p,
+.review__list-down .review__list-box .feedback p {
   font-family: var(--font-inter);
   font-size: var(--fs-5);
   font-weight: 400;
@@ -766,29 +808,29 @@ header .start-btn:hover {
   letter-spacing: 0.5%;
 }
 
-.client_feedback .feedback_container .client_details {
+.review__list-up .review__list-box .client_details,
+.review__list-down .review__list-box .client_details {
   display: flex;
   align-items: flex-start;
   gap: 16px;
   margin-top: 24px;
 }
 
-.client_feedback .feedback_container .client_details .client_img {
+.review__list-up .review__list-box .client_details .client_img,
+.review__list-down .review__list-box .client_details .client_img {
   width: 42px;
   height: 42px;
 }
 
-.client_feedback .feedback_container .client_details .client_img img {
+.review__list-up .review__list-box .client_details .client_img img,
+.review__list-down .review__list-box .client_details .client_img img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
-.client_feedback
-  .feedback_container
-  .client_details
-  .client_name_position
-  .name {
+.review__list-up .review__list-box .client_details .client_name_position .name,
+.review__list-down .review__list-box .client_details .client_name_position .name {
   font-family: var(--font-inter);
   font-size: var(--fs-5);
   font-weight: 600;
@@ -796,8 +838,12 @@ header .start-btn:hover {
   letter-spacing: 0.5%;
 }
 
-.client_feedback
-  .feedback_container
+.review__list-up
+  .review__list-box
+  .client_details
+  .client_name_position
+  .position,
+  .review__list-down .review__list-box
   .client_details
   .client_name_position
   .position {
@@ -1152,12 +1198,12 @@ footer {
   margin-bottom: 48px;
 }
 
-.left_part .socials{
+.left_part .socials {
   display: flex;
   gap: 1rem;
 }
 
-.left_part .socials a{
+.left_part .socials a {
   width: 40px;
   height: 40px;
   border-radius: 10px;
@@ -1179,8 +1225,7 @@ footer {
 
 .right_part .part_one,
 .right_part .part_two,
-.right_part .part_three
-{
+.right_part .part_three {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -1189,7 +1234,7 @@ footer {
 
 .right_part .part_one h4,
 .right_part .part_two h4,
-.right_part .part_three h4{
+.right_part .part_three h4 {
   font-family: var(--font-inter);
   font-weight: 500;
   font-size: var(--fs-4);
@@ -1198,7 +1243,7 @@ footer {
 
 .right_part .part_one a,
 .right_part .part_two a,
-.right_part .part_three a{
+.right_part .part_three a {
   color: #e9e9eacf;
   font-size: var(--fs-5);
   font-family: var(--font-inter);
@@ -1206,7 +1251,7 @@ footer {
 
 /* ------------------- Copyright -------------------- */
 
-.copyright{
+.copyright {
   margin-top: 2rem;
   display: flex;
   align-items: center;
@@ -1214,19 +1259,81 @@ footer {
   gap: 1rem;
 }
 
-.copyright-left p{
+.copyright-left p {
   color: #ffffffa5;
   font-size: var(--fs-6);
   font-family: var(--font-inter);
 }
 
-.copyright-right{
+.copyright-right {
   display: flex;
   gap: 2rem;
 }
 
-.copyright-right a{
+.copyright-right a {
   color: #ffffffa5;
   font-size: var(--fs-6);
   font-family: var(--font-inter);
+}
+
+/* ----------------------------------- Responsive Start ---------------------------------- */
+@media screen and (max-width: 1200px) {
+  /* Hero */
+  .home_content {
+    height: 680px;
+    padding-top: 7rem;
+  }
+
+  /* Date */
+  .date_bottom img {
+    width: 90%;
+  }
+
+  .date_content {
+    height: 280px;
+  }
+
+  /* About */
+  .about {
+    padding-top: 26rem;
+    padding-bottom: 8.75rem;
+  }
+
+  .about .shape .shape_one {
+    position: absolute;
+    top: -10rem;
+    right: 0;
+  }
+
+  .about .shape .shape_two {
+    position: absolute;
+    bottom: -12rem;
+    left: 0;
+  }
+
+  .about .shape img {
+    width: 180px;
+  }
+
+  .about_content .about_headings .about_subtitle,
+  .review_content .review_headings .review_subtitle {
+    width: 80%;
+  }
+
+  /* Blog */
+  .blog_headings .blog_subtitle {
+    width: 75%;
+  }
+
+  .blog_container .blog_box {
+    width: 30.5%;
+    height: 489px;
+    gap: 22px;
+    padding: 16px;
+  }
+
+  /* Review */
+  .review {
+    overflow: hidden;
+  }
 }

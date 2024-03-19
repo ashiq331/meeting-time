@@ -1,3 +1,5 @@
+
+
 // Add Event on elements
 const addEventOnElem = function (elem, type, callback) {
   if (elem.length > 1) {
@@ -8,7 +10,6 @@ const addEventOnElem = function (elem, type, callback) {
     elem.addEventListener(type, callback);
   }
 };
-
 
 // Navbar Toggle
 const navbar = document.querySelector("[data-navbar]");
@@ -31,3 +32,99 @@ const closeNavbar = function () {
 addEventOnElem(navbarLinks, "click", closeNavbar);
 
 
+
+
+
+// Service Up Section Slider
+let serviceupswiperup = new Swiper(".review__list-up", {
+  slidesPerView: 4,
+  spaceBetween: 10,
+  pagination: {
+    clickable: true,
+  },
+
+  breakpoints: {
+    100: {
+      slidesPerView: 0.4,
+    },
+
+    300: {
+      slidesPerView: 1.2,
+    },
+
+    550: {
+      slidesPerView: 1.3,
+    },
+
+    650: {
+      slidesPerView: 2,
+    },
+
+    800: {
+      slidesPerView: 2.7,
+    },
+
+    950: {
+      slidesPerView: 3,
+    },
+
+    1050: {
+      slidesPerView: 4,
+    },
+
+    1150: {
+      slidesPerView: 4,
+    },
+
+    1300: {
+      slidesPerView: 4,
+    },
+  },
+});
+
+// Service Down Section Slider
+let serviceupswiperdown = new Swiper(".review__list-down", {
+  slidesPerView: 4,
+  spaceBetween: 10,
+  pagination: {
+    clickable: true,
+  },
+
+  breakpoints: {
+    100: {
+      slidesPerView: 0.4,
+    },
+
+    300: {
+      slidesPerView: 1.2,
+    },
+
+    550: {
+      slidesPerView: 1.3,
+    },
+
+    650: {
+      slidesPerView: 2,
+    },
+
+    800: {
+      slidesPerView: 2.7,
+    },
+
+    950: {
+      slidesPerView: 3,
+    },
+
+    1050: {
+      slidesPerView: 4,
+    },
+
+    1150: {
+      slidesPerView: 4,
+    },
+
+    1300: {
+      slidesPerView: 4,
+    },
+  },
+});
