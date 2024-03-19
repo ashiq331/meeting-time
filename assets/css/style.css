@@ -597,7 +597,7 @@ header .start-btn:hover {
   text-align: center;
   margin: 0 auto;
   font-size: var(--fs-2);
-  font-weight: 600;
+  font-weight: 700;
   color: var(--black-500);
 }
 
@@ -842,7 +842,7 @@ header .start-btn:hover {
 
 .benefits_headings .left_headings h2{
   font-size: var(--fs-2);
-  font-weight: 600;
+  font-weight: 700;
   line-height: 120%;
   width: 85%;
   color: #1D1F2C;
@@ -907,8 +907,103 @@ header .start-btn:hover {
 }
 
 
-/* ------------------- Wishlist Section -------------------- */
 /* ------------------- Problem & Solution Section --------------------  */
+
+.ps{
+  padding-bottom: 8.75rem;
+}
+
+.ps_headings .ps_title {
+  font-size: var(--fs-7);
+  font-family: var(--font-inter);
+  color: var(--white);
+  background: #1f107e;
+  background: -webkit-linear-gradient(to right, #1f107e, #c467ec);
+  background: linear-gradient(to right, #1f107e, #c467ec);
+  padding: 12px 24px;
+  text-align: center;
+  width: 180px;
+  margin: 0 auto;
+  border-radius: 50px;
+  cursor: default;
+}
+
+.ps_headings .ps_subtitle {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  width: 65%;
+  text-align: center;
+  margin: 0 auto;
+  font-size: var(--fs-2);
+  font-weight: 700;
+  color: var(--black-500);
+}
+
+.ps_container{
+ margin-top: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.left-box, .right_box{
+  width: 50%;
+
+  padding: 32px;
+  border: 1px solid #a5a5ab4f;
+  border-radius: 16px;
+  gap: 12px;
+}
+
+
+.left-box ul
+{
+  list-style-type: none;
+  padding-left: 1rem;
+  padding-top: 24px;
+}
+
+.left-box ul li{
+  list-style-type: decimal;
+}
+
+.left-box h3{
+  font-size: var(--fs-3);
+  font-weight: 700;
+  letter-spacing: 0.5%;
+  color: var(--black-500);
+}
+
+.left-box ul li p{
+  font-size: var(--fs-4);
+  font-family: var(--font-inter);
+  line-height: 26px;
+  color: var(--black-500);
+}
+
+
+.right_box .right_box_content{
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 24px;
+}
+.right_box .right_box_content img{
+  height: 20px;
+  width: 20px;
+}
+
+.right_box .right_box_content p{
+  color: var(--black-500);
+  font-size: var(--fs-4);
+  font-family: var(--font-inter);
+  line-height: 26px;
+  margin-top: -0.2rem;
+}
+
+
+
 /* ------------------- Question Section -------------------- */
 /* ------------------- Wishlist Section -------------------- */
 /* ------------------- Footer -------------------- */
