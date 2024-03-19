@@ -30,3 +30,4 @@ const closeNavbar = function () {
 
 addEventOnElem(navbarLinks, "click", closeNavbar);
 
+
