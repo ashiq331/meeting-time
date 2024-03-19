@@ -678,7 +678,7 @@ header .start-btn:hover {
 .wishlist_container .wishlist_title h3 {
   font-size: var(--fs-3);
   font-weight: 600;
-  width: 65%;
+  width: 75%;
   text-align: center;
   margin: 0 auto;
   letter-spacing: 0.5%;
@@ -803,6 +803,110 @@ header .start-btn:hover {
 }
 
 /* ------------------- Benefits Section -------------------- */
+
+.benefits{
+  padding: 8.75rem 0;
+  background: url("/assets/images/benefit-bg.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.benefits_content{
+  display: flex;
+  flex-direction: column;
+  gap: 56px;
+}
+
+.benefits_headings{
+  width: 100%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.benefits_headings .left_headings p{
+  font-family: var(--font-inter);
+  font-size: var(--fs-7);
+  letter-spacing: 0.5%;
+  background: #1f107e;
+  background: -webkit-linear-gradient(to right, #1f107e, #c467ec);
+  background: linear-gradient(to right, #1f107e, #c467ec);
+  width: 120px;
+  color: var(--white);
+  text-align: center;
+  padding: 10px;
+  border-radius: 50px;
+}
+
+.benefits_headings .left_headings h2{
+  font-size: var(--fs-2);
+  font-weight: 600;
+  line-height: 120%;
+  width: 85%;
+  color: #1D1F2C;
+}
+
+.benefits_headings .right_article p{
+  font-family: var(--font-inter);
+  font-size: var(--fs-4);
+  line-height: 26px;
+  color: #1D1F2C;
+  width: 90%;
+}
+
+.benefit_container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  color: var(--black-500);
+}
+
+.benefit_box{
+  background-color: var(--white);
+  padding: 32px;
+ height: 340px;
+ border-radius: 16px;
+ width: 31.5%;
+}
+
+.benefit_box .benefit_img{
+  height: 80px;
+  width: 80px;
+  background: #1f107e;
+  background: -webkit-linear-gradient(to right, #1f107e, #c467ec);
+  background: linear-gradient(to right, #1f107e, #c467ec);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.benefit_box .benefit_img img{
+  width: 32px;
+}
+
+.benefit_box h3{
+  padding-top: 24px;
+  padding-bottom: 20px;
+  font-weight: 700;
+  font-size: var(--fs-3);
+  line-height: 120%;
+  letter-spacing: 0.5%;
+  width: 95%;
+}
+
+.benefit_box p{
+  color: var(--black-400);
+  font-family: var(--font-mulish);
+  font-size: var(--fs-4);
+  line-height: 150%;
+}
+
+
 /* ------------------- Wishlist Section -------------------- */
 /* ------------------- Problem & Solution Section --------------------  */
 /* ------------------- Question Section -------------------- */
