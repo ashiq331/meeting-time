@@ -729,25 +729,83 @@ header .start-btn:hover {
 /* ------------------- client cycle Section -------------------- */
 
 .client_cycle {
-  padding: 8.75rem 0;
   background: url("/assets/images/clinet-circle-bg.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
-  padding-top: 13rem;
+  padding: 140px 0;
 }
 
-.round_circle{
-  background: url("/assets/images/Client\ Cycle.png");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
-  height: 600px;
+.cycle_content{
+  height: 849px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   position: relative;
 }
-.box {
+
+.cycle_box h2{
+  font-weight: 700;
   text-align: center;
 }
+
+.box {
+  width: 300px;
+  height: 200px;
+}
+
+.box_1,
+.box_2,
+.box_3,
+.box_4,
+.arrow_1,
+.arrow_2,
+.arrow_3,
+.arrow_4{
+  position: absolute;
+}
+
+.box_1{
+  top: 0;
+  left: 38%;
+}
+
+.arrow_1{
+  top: 10rem;
+  right: 13rem;
+}
+
+.box_2{
+  right: 2rem;
+  top: 22rem;
+}
+
+.arrow_2{
+  bottom: 5rem;
+  right: 13rem;
+}
+
+.box_3{
+  bottom: -6rem;
+  left: 30rem;
+}
+
+.arrow_3{
+  bottom: 5rem;
+  left: 10rem;
+}
+
+
+.box_4{
+  left: 1rem;
+  bottom: 18rem;
+}
+
+.arrow_4{
+  top: 10rem;
+  left: 10rem;
+}
+
 
 .box .number{
   background: #1f107e;
@@ -769,29 +827,20 @@ header .start-btn:hover {
   padding-top: 32px;
   padding-bottom: 14px;
   font-size: var(--fs-3);
-  font-weight: 800;
+  font-weight: 700;
   letter-spacing: 0.5%;
   color: var(--black-500);
+  text-align: center;
 }
 
 .box p{
   color: var(--black-400);
   font-size: var(--fs-4);
-  
+  font-family: var(--font-inter);
+  line-height: 26px;
+  text-align: center;
 }
 
-.top_box{
-  width: 352px;
-  position: absolute;
-  top: -9rem;
-  left: 38%;
-}
-
-.center_box{
-  display: flex;
-  position: absolute;
-  top: 35%;
-}
 
 
 
