@@ -243,7 +243,7 @@ section {
 }
 
 .navbar .wrapper .nav__logo {
-  width: 246px;
+  width: 242px;
 }
 
 .navbar .navbar-list {
@@ -731,6 +731,7 @@ header .start-btn:hover {
   padding: 8.75rem 0;
   height: 80vh;
 }
+
 /* ------------------- Review Section -------------------- */
 .review {
   padding: 8.75rem 0;
@@ -1247,7 +1248,7 @@ footer {
   width: 15%;
 }
 
- .part_one h4,
+.part_one h4,
 .part_two h4,
 .part_three h4 {
   font-family: var(--font-inter);
@@ -1256,7 +1257,7 @@ footer {
   padding-bottom: 20px;
 }
 
- .part_one a,
+.part_one a,
 .part_two a,
 .part_three a {
   color: #e9e9eacf;
@@ -1429,6 +1430,11 @@ footer {
     padding: 8px 18px;
   }
 
+  /* Home */
+  .home_content .home_article p {
+    width: 80%;
+  }
+
   /* Date */
   .date_content {
     height: 270px;
@@ -1440,48 +1446,334 @@ footer {
 
   /* About */
   .about_content .about_headings .about_subtitle,
-.review_content .review_headings .review_subtitle{
-  width: 100%;
+  .review_content .review_headings .review_subtitle {
+    width: 100%;
+  }
+
+  .about_content .about_headings .about_article {
+    width: 80%;
+  }
+
+  .about_content .about_details {
+    flex-direction: column;
+  }
+
+  .about_content .about_details .about_details-box {
+    width: 100%;
+  }
+
+  /* Blog */
+  .blog_headings .blog_subtitle {
+    width: 90%;
+  }
+
+  .blog_headings .blog_article {
+    width: 80%;
+  }
+
+  .blog_container .blog_box {
+    padding: 13px;
+    border-radius: 8px;
+    height: 440px;
+    width: 30%;
+    gap: 1rem;
+  }
+
+  /* Review */
+  .review__list-down {
+    display: none;
+  }
+
+  /* Benefits */
+  .benefit_box {
+    background-color: var(--white);
+    padding: 16px;
+    height: 330px;
+    border-radius: 16px;
+  }
+
+  .benefit_box .benefit_img {
+    height: 48px;
+    width: 48px;
+  }
+
+  .benefit_box .benefit_img img {
+    width: 19px;
+  }
+
+  .benefit_box h3 {
+    padding-top: 14px;
+    padding-bottom: 14px;
+    width: 100%;
+  }
+
+  .benefit_box p {
+    font-size: var(--fs-5);
+  }
+
+  /* Problem & Solution Section */
+  .ps_container {
+    flex-direction: column;
+  }
+
+  .left-box,
+  .right_box {
+    width: 100%;
+    height: auto;
+  }
+
+  /* Footer */
+  .footer_content {
+    flex-wrap: wrap;
+    align-items: flex-start;
+    row-gap: 3rem;
+  }
+
+  .footer_content .left_part {
+    width: 60%;
+  }
+
+  .right_part .part_one {
+    width: 40%;
+  }
+
+  .right_part .part_two,
+  .right_part .part_three {
+    width: 40%;
+  }
 }
 
-.about_content .about_headings .about_article{
-  width: 80%;
+@media screen and (max-width: 834px) {
+  :root {
+    --fs-1: 48px;
+    --fs-2: 36px;
+    --fs-3: 18px;
+    --fs-4: 16px;
+    --fs-5: 16px;
+    --fs-6: 14px;
+    --fs-7: 12px;
+  }
+
+  .top_nav {
+    display: none;
+  }
+
+  /* Home */
+  .home_content {
+    height: 520px;
+  }
+
+  /* Date */
+
+  .date_content {
+    height: 320px;
+  }
+
+  .date_top {
+    gap: 1rem;
+  }
+
+  .date_bottom {
+    position: absolute;
+    bottom: -15rem;
+    z-index: 99 !important;
+  }
+
+  /* About */
+  .about {
+    padding-top: 20rem;
+    padding-bottom: 64px;
+  }
+  .about .shape .shape_one,
+  .about .shape .shape_two {
+    display: none;
+  }
+
+  .about_content .about_details {
+    margin-top: 48px;
+  }
+
+  /* Blog */
+
+  .blog {
+    padding-top: 64px;
+    padding-bottom: 64px;
+  }
+
+  .blog_container {
+    padding-top: 48px;
+  }
+
+  .blog_container .blog_box {
+    height: 371px;
+  }
+
+  /* Review */
+  .review {
+    padding: 64px 0;
+  }
+
+  /* Benefits */
+  .benefits {
+    padding: 80px 0;
+  }
+
+  .benefits_content {
+    gap: 48px;
+  }
+
+  .benefit_box {
+    padding: 16px;
+    height: 320px;
+    padding-top: 24px;
+    padding-bottom: 20px;
+  }
+
+  /* Ps */
+  .ps {
+    padding-bottom: 80px;
+  }
+
+  .ps_container {
+    margin-top: 48px;
+    gap: 32px;
+  }
+
+  /* Wishlist */
+  .wishlist_container .wishlist_btn .btn {
+    padding: 10px 20px;
+  }
+  .wishlist_container .wishlist_title h3 {
+    font-size: 20px;
+  }
+
+  .wishlist_content .wishlist_title h3 {
+    font-size: 36px;
+  }
+
+  /* Question */
+  .accordion_section {
+    padding-bottom: 32px;
+  }
+
+  .accordion_container {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    height: auto;
+  }
+
+  .accordion_headings,
+  .accordion {
+    width: 100%;
+  }
+
+  .accordion_headings {
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .accordion_headings .accordion_title,
+  .accordion_headings .accordion_subtitle,
+  .accordion_headings .accordion_article {
+    margin: 0 auto;
+  }
+
+  /* Wishlist Bottom */
+  .wishlist_bottom {
+    height: auto;
+    padding-bottom: 2rem;
+  }
+
+  /* Footer */
+  .footer_content .left_part {
+    width: 100%;
+  }
+
+  .part_one,
+  .part_two,
+  .part_three {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+    width: 30%;
+  }
 }
 
-.about_content .about_details{
-  flex-direction: column;
+@media screen and (max-width: 768px) {
+  /* Home */
+  .home_content {
+    height: auto;
+    padding-bottom: 2rem;
+  }
+
+  /* Date */
+  .date_content {
+    height: 330px;
+  }
+
+  .date_bottom {
+    position: absolute;
+    bottom: -8rem;
+    z-index: 99 !important;
+  }
+
+  /* About */
+  .about{
+    padding-top: 12rem;
+  }
+  
+  /* Blog */
+  .blog{
+    padding-top: 56px;
+  }
+  .blog_headings .blog_subtitle {
+    width: 100%;
+  }
+
+  .blog_headings .blog_subtitle{
+    width: 100%;
+  }
+
+  .blog_container .blog_box {
+    width: 100%;
+    height: auto;
+  }
+
+  /* Review */
+  .review_headings{
+    padding-bottom: 56px;
+  }
+
+  /* Benefits */
+.benefits_headings{
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .benefits_headings .left_headings p,
+  .benefits_headings .left_headings h2,
+  .benefits_headings .right_article p {
+    margin: 0 auto;
+  }
+
+  .benefits_headings .left_headings h2{
+    padding-top: 12px;
+  }
+
+  .benefit_box {
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+
+  }
+
+
+
+
 }
 
-.about_content .about_details .about_details-box{
-  width: 100%;
-}
-
-/* Blog */
-.blog_headings .blog_subtitle{
-  width: 90%;
-}
-
-.blog_headings .blog_article{
-  width: 80%;
-}
-
-/* Footer */
-.footer_content{
-  flex-wrap: wrap;
-  align-items: flex-start;
-}
-
-.footer_content .left_part {
-  width: 60%;
-}
-
-.right_part .part_one{
-  width: 40%;
-}
-
-.right_part .part_two,
-.right_part .part_three{
-  width: 40%;
-}
-
+@media screen and (max-width: 576px) {
 }
