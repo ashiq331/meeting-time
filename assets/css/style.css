@@ -759,6 +759,10 @@ header .start-btn:hover {
   margin-top: 5rem;
 }
 
+.swiper-pagination{
+  display: none;
+}
+
 .review__list {
   width: 100%;
   display: -webkit-box;
@@ -797,6 +801,8 @@ header .start-btn:hover {
   padding: 24px;
   height: 242px;
 }
+
+
 
 .review__list-up .review__list-box .quotes img,
 .review__list-down .review__list-box .quotes img {
@@ -1431,7 +1437,7 @@ footer {
     position: absolute;
     top: 10rem;
   }
-  
+
   .navbar .navbar-list .navbar-item {
     width: 350px;
   }
@@ -1492,6 +1498,16 @@ footer {
   }
 
   /* Review */
+
+  .swiper-pagination{
+    display: block;
+    margin-top: 3rem;
+  }
+
+  .review__list-up{
+    padding-bottom: 3rem;
+  }
+
   .review__list-down {
     display: none;
   }
@@ -1805,7 +1821,7 @@ footer {
     position: absolute;
     top: 10rem;
   }
-  
+
   .navbar .navbar-list .navbar-item {
     width: 350px;
   }
@@ -1847,7 +1863,18 @@ footer {
     font-size: 16px;
   }
 
-  .home_content .home_btn a{
+  .home_content .home_btn a {
     font-size: 16px;
+  }
+
+  /* Wishlist Bottom */
+  .wishlist_content .wishlist_title h3 {
+    font-size: 20px;
+  }
+
+  .wishlist_content {
+    height: auto;
+    gap: 1rem;
+    padding-bottom: 2rem;
   }
 }

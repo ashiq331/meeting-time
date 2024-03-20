@@ -40,6 +40,8 @@ let serviceupswiperup = new Swiper(".review__list-up", {
   slidesPerView: 4,
   spaceBetween: 10,
   pagination: {
+    el: ".swiper-pagination",
+    dynamicBullets: true,
     clickable: true,
   },
 
@@ -61,11 +63,11 @@ let serviceupswiperup = new Swiper(".review__list-up", {
     },
 
     800: {
-      slidesPerView: 2.7,
+      slidesPerView: 2.2,
     },
 
     950: {
-      slidesPerView: 3,
+      slidesPerView: 2.4,
     },
 
     1050: {
