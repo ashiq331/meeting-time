@@ -73,7 +73,7 @@ let serviceupswiperup = new Swiper(".review__list-up", {
     },
 
     1150: {
-      slidesPerView: 4,
+      slidesPerView: 3.4,
     },
 
     1300: {
@@ -120,7 +120,7 @@ let serviceupswiperdown = new Swiper(".review__list-down", {
     },
 
     1150: {
-      slidesPerView: 4,
+      slidesPerView: 3.4,
     },
 
     1300: {
