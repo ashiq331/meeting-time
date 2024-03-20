@@ -259,8 +259,7 @@ section {
 .navbar .navbar-list .navbar-link {
   display: block;
   color: var(--black);
-  font-size: 18px;
-  border-bottom: 1px so;
+  font-size: var(--fs-3);
 }
 
 .nav-close-btn {
@@ -273,13 +272,6 @@ section {
 .nav-close-btn i {
   font-size: 30px;
   color: var(--black);
-}
-
-.navbar-link {
-  color: var(--white);
-  font-size: 20pt;
-  transition: var(--transition-1);
-  padding-left: -4rem;
 }
 
 header .start-btn {
@@ -320,7 +312,7 @@ header .start-btn:hover {
   pointer-events: all;
 }
 
-.start-btn-mobile{
+.start-btn-mobile {
   display: none;
 }
 
@@ -441,6 +433,7 @@ header .start-btn:hover {
 .date {
   background: url("/assets/images/home-bg-2.png");
   background-size: cover;
+  background-position: center;
   background-position-y: 80%;
 }
 
@@ -1434,6 +1427,21 @@ footer {
     padding: 8px 18px;
   }
 
+  .navbar .navbar-list {
+    position: absolute;
+    top: 10rem;
+  }
+  
+  .navbar .navbar-list .navbar-item {
+    width: 350px;
+  }
+  .navbar .navbar-list .navbar-link {
+    width: 100%;
+    border-bottom: 1px solid rgba(163, 163, 163, 0.237);
+    font-size: 24px;
+    padding-bottom: 12px;
+  }
+
   /* Home */
   .home_content .home_article p {
     width: 80%;
@@ -1784,16 +1792,35 @@ footer {
 
   /* Header */
 
+  .navbar {
+    width: 100%;
+  }
+
   .home__navabr .logo,
   .navbar .wrapper .nav__logo {
     width: 212px;
+  }
+
+  .navbar .navbar-list {
+    position: absolute;
+    top: 10rem;
+  }
+  
+  .navbar .navbar-list .navbar-item {
+    width: 350px;
+  }
+  .navbar .navbar-list .navbar-link {
+    width: 100%;
+    border-bottom: 1px solid rgba(163, 163, 163, 0.237);
+    font-size: 18px;
+    padding-bottom: 12px;
   }
 
   .start-btn {
     display: none;
   }
 
-  .start-btn-mobile{
+  .start-btn-mobile {
     display: block;
     width: 100%;
     padding: 12px 23px;
@@ -1804,11 +1831,23 @@ footer {
     border-radius: 50px;
     transition: var(--transition-2);
     outline: none;
-    margin-top: 19rem;
+    margin-top: 6rem;
     text-align: center;
   }
 
   /* Home */
+  .home_content {
+    padding-top: 5rem;
+    width: 95%;
+  }
 
+  .home_content .home_article p {
+    padding-top: 16px;
+    padding-bottom: 48px;
+    font-size: 16px;
+  }
 
+  .home_content .home_btn a{
+    font-size: 16px;
+  }
 }
