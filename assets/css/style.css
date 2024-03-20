@@ -222,7 +222,7 @@ section {
   color: var(--black);
   display: flex;
   align-items: center;
-  width: 50%;
+  width: 80%;
   height: 100%;
   padding: 20px;
   z-index: 9999;
@@ -259,7 +259,8 @@ section {
 .navbar .navbar-list .navbar-link {
   display: block;
   color: var(--black);
-  font-size: var(--h3);
+  font-size: 18px;
+  border-bottom: 1px so;
 }
 
 .nav-close-btn {
@@ -317,6 +318,10 @@ header .start-btn:hover {
 .overlay.active {
   opacity: 1;
   pointer-events: all;
+}
+
+.start-btn-mobile{
+  display: none;
 }
 
 @media (min-width: 992px) {
@@ -1270,7 +1275,6 @@ footer {
 .copyright {
   margin-top: 2rem;
   display: flex;
-  align-items: center;
   justify-content: space-between;
   gap: 1rem;
 }
@@ -1721,19 +1725,19 @@ footer {
   }
 
   /* About */
-  .about{
+  .about {
     padding-top: 12rem;
   }
-  
+
   /* Blog */
-  .blog{
+  .blog {
     padding-top: 56px;
   }
   .blog_headings .blog_subtitle {
     width: 100%;
   }
 
-  .blog_headings .blog_subtitle{
+  .blog_headings .blog_subtitle {
     width: 100%;
   }
 
@@ -1743,12 +1747,12 @@ footer {
   }
 
   /* Review */
-  .review_headings{
+  .review_headings {
     padding-bottom: 56px;
   }
 
   /* Benefits */
-.benefits_headings{
+  .benefits_headings {
     flex-direction: column;
     text-align: center;
   }
@@ -1759,7 +1763,7 @@ footer {
     margin: 0 auto;
   }
 
-  .benefits_headings .left_headings h2{
+  .benefits_headings .left_headings h2 {
     padding-top: 12px;
   }
 
@@ -1767,13 +1771,44 @@ footer {
     flex-direction: column;
     width: 100%;
     height: auto;
-
   }
-
-
-
-
 }
 
 @media screen and (max-width: 576px) {
+  :root {
+    --fs-1: 26px;
+    --fs-2: 20px;
+    --fs-3: 16px;
+    --fs-4: 14px;
+  }
+
+  /* Header */
+
+  .home__navabr .logo,
+  .navbar .wrapper .nav__logo {
+    width: 212px;
+  }
+
+  .start-btn {
+    display: none;
+  }
+
+  .start-btn-mobile{
+    display: block;
+    width: 100%;
+    padding: 12px 23px;
+    color: var(--primary-color);
+    font-weight: 600;
+    font-size: var(--fs-4);
+    border: 2px solid var(--primary-color);
+    border-radius: 50px;
+    transition: var(--transition-2);
+    outline: none;
+    margin-top: 19rem;
+    text-align: center;
+  }
+
+  /* Home */
+
+
 }
