@@ -661,6 +661,8 @@ header .start-btn:hover {
   font-family: var(--font-mulish);
   font-size: var(--fs-4);
 }
+
+
 /* ------------------- Wishlist Section -------------------- */
 
 .wishlist_container {
@@ -727,8 +729,70 @@ header .start-btn:hover {
 
 .client_cycle {
   padding: 8.75rem 0;
-  height: 80vh;
+  background: url("/assets/images/clinet-circle-bg.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  padding-top: 13rem;
 }
+
+.round_circle{
+  background: url("/assets/images/Client\ Cycle.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  height: 600px;
+  position: relative;
+}
+.box {
+  text-align: center;
+}
+
+.box .number{
+  background: #1f107e;
+  background: -webkit-linear-gradient(to right, #1f107e, #c467ec);
+  background: linear-gradient(to right, #1f107e, #c467ec);
+  height: 56px;
+  width: 56px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--white);
+  font-size: var(--fs-3);
+  font-weight: 700;
+  margin: 0 auto;
+}
+
+.box .box_title{
+  padding-top: 32px;
+  padding-bottom: 14px;
+  font-size: var(--fs-3);
+  font-weight: 800;
+  letter-spacing: 0.5%;
+  color: var(--black-500);
+}
+
+.box p{
+  color: var(--black-400);
+  font-size: var(--fs-4);
+  
+}
+
+.top_box{
+  width: 352px;
+  position: absolute;
+  top: -9rem;
+  left: 38%;
+}
+
+.center_box{
+  display: flex;
+  position: absolute;
+  top: 35%;
+}
+
+
 
 /* ------------------- Review Section -------------------- */
 .review {
@@ -759,7 +823,7 @@ header .start-btn:hover {
   margin-top: 5rem;
 }
 
-.swiper-pagination{
+.swiper-pagination {
   display: none;
 }
 
@@ -801,8 +865,6 @@ header .start-btn:hover {
   padding: 24px;
   height: 242px;
 }
-
-
 
 .review__list-up .review__list-box .quotes img,
 .review__list-down .review__list-box .quotes img {
@@ -1499,12 +1561,12 @@ footer {
 
   /* Review */
 
-  .swiper-pagination{
+  .swiper-pagination {
     display: block;
     margin-top: 3rem;
   }
 
-  .review__list-up{
+  .review__list-up {
     padding-bottom: 3rem;
   }
 

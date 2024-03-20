@@ -33,12 +33,15 @@ addEventOnElem(navbarLinks, "click", closeNavbar);
 
 
 
-
-
 // Service Up Section Slider
 let serviceupswiperup = new Swiper(".review__list-up", {
   slidesPerView: 4,
   spaceBetween: 10,
+  autoplay: {
+    delay: 2500,
+    disableOnInteraction: false,
+    direction: 'rtl',
+  },
   pagination: {
     el: ".swiper-pagination",
     dynamicBullets: true,
@@ -90,6 +93,11 @@ let serviceupswiperdown = new Swiper(".review__list-down", {
   spaceBetween: 10,
   pagination: {
     clickable: true,
+  },
+  autoplay: {
+    delay: 2800,
+    disableOnInteraction: false,
+    direction: 'ltr',
   },
 
   breakpoints: {
