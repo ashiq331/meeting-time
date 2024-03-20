@@ -2056,6 +2056,13 @@ footer {
     gap: 12px;
     width: 30%;
   }
+  .part_one h4,
+  .part_two h4,
+  .part_three h4{
+    font-size: 18px;
+  }
+
+
 }
 
 @media screen and (max-width: 767px) {
@@ -2304,6 +2311,16 @@ footer {
   .copyright {
     flex-wrap: wrap;
     gap: 1rem;
+  }
+
+  .part_one h4,
+  .part_two h4,
+  .part_three h4{
+    font-size: 16px;
+  }
+
+  .part_one a, .part_two a, .part_three a {
+    font-size: 14px;
   }
 }
 
