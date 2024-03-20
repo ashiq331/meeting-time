@@ -805,6 +805,10 @@ header .start-btn:hover {
   left: 10rem;
 }
 
+.mobile{
+  display: none;
+}
+
 .box .number {
   background: #1f107e;
   background: -webkit-linear-gradient(to right, #1f107e, #c467ec);
@@ -1730,7 +1734,6 @@ footer {
   }
 
   /* Clients cycle */
-
   .client_cycle {
     padding: 64px 0;
   }
@@ -2095,6 +2098,92 @@ footer {
     height: auto;
   }
 
+  /* Client Cycle */
+  .box {
+    width: 40%;
+    height: auto;
+  }
+
+  .cycle_content {
+    height: 388px;
+    position: relative;
+  }
+
+  .cycle_box h2 {
+    font-size: 18px;
+  }
+
+  .box_1 {
+    top: 0;
+    left: 0;
+  }
+
+  .box_2 {
+    top: 0;
+    right: 0;
+  }
+
+  .box_3 {
+    bottom: 0;
+    left: 60%;
+  }
+
+  .box_4 {
+    left: 0;
+    bottom: 0;
+  }
+
+  .pc{
+    display: none;
+  }
+
+  .mobile{
+    display: flex;
+  }
+
+  .arrow_1 {
+    left: 42%;
+  }
+  
+  .arrow_1 img{
+    width: 50%;
+    rotate: -3deg;
+  }
+
+  .arrow_2 {
+    bottom: 9rem;
+    right: 4rem;
+  }
+
+  .arrow_2 img{
+   width: 90%;
+   rotate: 23deg;
+  }
+
+  .arrow_3 {
+    bottom: 2rem;
+    left: 44%;
+  }
+
+  .arrow_3 img{
+    width: 95%;
+    rotate: -8deg;
+  }
+
+  .arrow_4 {
+    top: 9rem;
+    left: 2rem;
+  }
+
+  .arrow_4 img{
+    width: 90%;
+  }
+
+
+  .box p{
+    width: 95%;
+  }
+
   /* Review */
   .review_headings {
     padding-bottom: 56px;
@@ -2207,5 +2296,19 @@ footer {
   .copyright {
     flex-wrap: wrap;
     gap: 1rem;
+  }
+}
+
+@media screen and (max-width: 476px) {
+  .arrow_1 img{
+    width: 70%;
+    rotate: -3deg;
+  }
+}
+
+@media screen and (max-width: 396px) {
+  .arrow_1 img{
+    width: 90%;
+    rotate: -3deg;
   }
 }
