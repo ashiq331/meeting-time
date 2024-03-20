@@ -663,7 +663,6 @@ header .start-btn:hover {
   font-size: var(--fs-4);
 }
 
-
 /* ------------------- Wishlist Section -------------------- */
 
 .wishlist_container {
@@ -736,7 +735,7 @@ header .start-btn:hover {
   padding: 140px 0;
 }
 
-.cycle_content{
+.cycle_content {
   height: 849px;
   display: flex;
   align-items: center;
@@ -744,7 +743,8 @@ header .start-btn:hover {
   position: relative;
 }
 
-.cycle_box h2{
+.cycle_box h2 {
+  font-size: var(--fs-2);
   font-weight: 700;
   text-align: center;
 }
@@ -761,53 +761,51 @@ header .start-btn:hover {
 .arrow_1,
 .arrow_2,
 .arrow_3,
-.arrow_4{
+.arrow_4 {
   position: absolute;
 }
 
-.box_1{
+.box_1 {
   top: 0;
   left: 38%;
 }
 
-.arrow_1{
+.arrow_1 {
   top: 10rem;
   right: 13rem;
 }
 
-.box_2{
+.box_2 {
   right: 2rem;
   top: 22rem;
 }
 
-.arrow_2{
+.arrow_2 {
   bottom: 5rem;
   right: 13rem;
 }
 
-.box_3{
+.box_3 {
   bottom: -6rem;
   left: 30rem;
 }
 
-.arrow_3{
+.arrow_3 {
   bottom: 5rem;
   left: 10rem;
 }
 
-
-.box_4{
+.box_4 {
   left: 1rem;
   bottom: 18rem;
 }
 
-.arrow_4{
+.arrow_4 {
   top: 10rem;
   left: 10rem;
 }
 
-
-.box .number{
+.box .number {
   background: #1f107e;
   background: -webkit-linear-gradient(to right, #1f107e, #c467ec);
   background: linear-gradient(to right, #1f107e, #c467ec);
@@ -823,7 +821,7 @@ header .start-btn:hover {
   margin: 0 auto;
 }
 
-.box .box_title{
+.box .box_title {
   padding-top: 32px;
   padding-bottom: 14px;
   font-size: var(--fs-3);
@@ -833,16 +831,13 @@ header .start-btn:hover {
   text-align: center;
 }
 
-.box p{
+.box p {
   color: var(--black-400);
   font-size: var(--fs-4);
   font-family: var(--font-inter);
   line-height: 26px;
   text-align: center;
 }
-
-
-
 
 /* ------------------- Review Section -------------------- */
 .review {
@@ -1410,6 +1405,68 @@ footer {
 }
 
 /* ----------------------------------- Responsive Start ---------------------------------- */
+@media screen and (max-width: 1400px) {
+  .box_1 {
+    top: 0;
+    left: 38%;
+  }
+
+  .arrow_1 {
+    top: 12rem;
+    right: 10rem;
+  }
+
+  .arrow_1 img {
+    width: 200px;
+    rotate: 12deg;
+  }
+
+  .box_2 {
+    right: 0rem;
+    top: 22rem;
+  }
+
+  .arrow_2 {
+    bottom: 7rem;
+    right: 12rem;
+    rotate: -14deg;
+  }
+
+  .arrow_2 img {
+    width: 250px;
+  }
+
+  .box_3 {
+    bottom: -6rem;
+    left: 27rem;
+  }
+
+  .arrow_3 {
+    bottom: 6rem;
+    left: 13rem;
+  }
+
+  .arrow_3 img {
+    width: 270px;
+    rotate: 12deg;
+  }
+
+  .box_4 {
+    left: 1rem;
+    bottom: 18rem;
+  }
+
+  .arrow_4 {
+    top: 12rem;
+    left: 10rem;
+    rotate: -8deg;
+  }
+
+  .arrow_4 img {
+    width: 240px;
+  }
+}
+
 @media screen and (max-width: 1200px) {
   /* Hero */
   .home_content {
@@ -1463,6 +1520,67 @@ footer {
     height: 489px;
     gap: 22px;
     padding: 16px;
+  }
+
+  /* Clients cycle */
+  .box_1 {
+    top: 0;
+    left: 38%;
+  }
+
+  .arrow_1 {
+    top: 14rem;
+    right: 10rem;
+  }
+
+  .arrow_1 img {
+    width: 160px;
+    rotate: 19deg;
+  }
+
+  .box_2 {
+    right: 0rem;
+    top: 22rem;
+  }
+
+  .arrow_2 {
+    bottom: 9rem;
+    right: 9rem;
+    rotate: -15deg;
+  }
+
+  .arrow_2 img {
+    width: 220px;
+  }
+
+  .box_3 {
+    bottom: -3rem;
+    left: 22rem;
+  }
+
+  .arrow_3 {
+    bottom: 8rem;
+    left: 13rem;
+  }
+
+  .arrow_3 img {
+    width: 220px;
+    rotate: 12deg;
+  }
+
+  .box_4 {
+    left: 1rem;
+    bottom: 18rem;
+  }
+
+  .arrow_4 {
+    top: 14rem;
+    left: 10rem;
+    rotate: -15deg;
+  }
+
+  .arrow_4 img {
+    width: 180px;
   }
 
   /* Review */
@@ -1609,6 +1727,99 @@ footer {
     height: 440px;
     width: 30%;
     gap: 1rem;
+  }
+
+  /* Clients cycle */
+
+  .client_cycle {
+    padding: 64px 0;
+  }
+
+  .cycle_content {
+    height: 483px;
+  }
+
+  .box .number {
+    height: 31px;
+    width: 31px;
+    font-size: 14px;
+  }
+
+  .box .box_title {
+    font-size: 14px;
+    padding-top: 16px;
+    padding-bottom: 12px;
+  }
+
+  .box p {
+    font-size: 12px;
+    line-height: 14.7px;
+    width: 60%;
+    margin: 0 auto;
+  }
+
+  .cycle_box h2 {
+    font-size: 28px;
+  }
+
+  .box_1 {
+    top: 0;
+    left: 30%;
+  }
+
+  .arrow_1 {
+    top: 5rem;
+    right: 9rem;
+  }
+
+  .arrow_1 img {
+    width: 110px;
+    rotate: 19deg;
+  }
+
+  .box_2 {
+    right: 0rem;
+    top: 10rem;
+  }
+
+  .arrow_2 {
+    bottom: 6rem;
+    right: 8rem;
+    rotate: -13deg;
+  }
+
+  .arrow_2 img {
+    width: 140px;
+  }
+
+  .box_3 {
+    bottom: -4rem;
+    left: 12.3rem;
+  }
+
+  .arrow_3 {
+    bottom: 6rem;
+    left: 9rem;
+  }
+
+  .arrow_3 img {
+    width: 140px;
+    rotate: 15deg;
+  }
+
+  .box_4 {
+    left: 0rem;
+    bottom: 7rem;
+  }
+
+  .arrow_4 {
+    top: 4rem;
+    left: 9rem;
+    rotate: -15deg;
+  }
+
+  .arrow_4 img {
+    width: 130px;
   }
 
   /* Review */
@@ -1993,7 +2204,7 @@ footer {
   }
 
   /* Foter */
-  .copyright{
+  .copyright {
     flex-wrap: wrap;
     gap: 1rem;
   }
