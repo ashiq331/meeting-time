@@ -1338,6 +1338,8 @@ footer {
   display: flex;
   justify-content: space-between;
   gap: 1rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.118);
+  padding-top: 1rem;
 }
 
 .copyright-left p {
@@ -1938,5 +1940,11 @@ footer {
     height: auto;
     gap: 1rem;
     padding-bottom: 2rem;
+  }
+
+  /* Foter */
+  .copyright{
+    flex-wrap: wrap;
+    gap: 1rem;
   }
 }
