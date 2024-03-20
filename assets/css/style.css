@@ -621,6 +621,7 @@ header .start-btn:hover {
   font-weight: 200;
   line-height: 26px;
   color: var(--black-500);
+  line-height: 140%;
 }
 
 .blog_container {
